@@ -1,0 +1,43 @@
+# WorkBuddy 本地项目数据（会话记录、memory）
+.workbuddy/
+
+# ===== Java / JVM =====
+target/
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+!gradle/wrapper/gradle-wrapper.jar
+.gradle/
+
+# Maven / Gradle 本地缓存与构建输出
+dependency-reduced-pom.xml
+*.log
+
+# ===== IDE =====
+.idea/
+*.iml
+*.ipr
+*.iws
+.settings/
+.project
+.classpath
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 敏感信息：密钥、本地配置一律不入库 =====
+.env
+*.local
+application-local.yml
+application-local.properties
+*.pem
+*.key
+secrets/
